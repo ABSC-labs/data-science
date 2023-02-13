@@ -10,4 +10,4 @@ docker build . -t jupyter-interview -f Dockerfile --platform=linux/amd64
 ```bash
 docker run -it --rm -p 10000:8888 -v "${PWD}":/code jupyter-interview
 ```
-1. Browse to [http://127.0.0.1:10000/lab](http://127.0.0.1:10000/lab)
+3. Browse to the URL printed at the end of the Docker container startup. You will switch the port from `8888` to `10000`.
